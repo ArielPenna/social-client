@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../context/auth';
 import LikeButton from './LikeButton';
 import DeleteButton from './DeleteButton';
+import '../App.css';
 
 function PostCard({ post: { body, createdAt, id, username, likeCount, commentCount, likes } }) {
   const { user } = useContext(AuthContext);
@@ -13,7 +14,7 @@ function PostCard({ post: { body, createdAt, id, username, likeCount, commentCou
     window.history.go('./');
   }
   return (
-    <Card fluid className="ui shadowed raised card">
+    <Card fluid className="ui shadowed raised cards stack">
       <Card.Content>
         <Image floated="right" size="mini" src="https://react.semantic-ui.com/images/avatar/large/molly.png" />
         <Card.Header>{username}</Card.Header>

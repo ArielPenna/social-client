@@ -1,13 +1,17 @@
-.page-title{
-  display: block !IMPORTANT;
+.page-title {
+  display: block !important;
   text-align: center;
   margin-top: 20px;
 }
-.form-container{
+.form-container {
   width: 400px;
-  margin: auto  
+  margin: auto;
 }
-.center-text{
+.center-text {
   text-align: center;
 }
+.mobile {
+  display: flex;
 
+  min-width: 300px;
+}
